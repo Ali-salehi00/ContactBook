@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Details</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #222;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .detail-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #2563eb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Contact Details</h1>
+
+        <div class="detail-card">
+
+            <h2>{{ contact.name }}</h2>
+
+            <p>Phone: {{ contact.phone }}</p>
+
+            <p>Email: {{ contact.email }}</p>
+
+        </div>
+
+        <a class="back-link" href="/">
+            Back to Contacts
+        </a>
+
+    </div>
+
+</body>
+</html>
